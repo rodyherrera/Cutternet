@@ -62,10 +62,10 @@ SERVER_HOST = 0.0.0.0
 # You must indicate the hostname of the client, for example if you have the React application in vercel this should be something like "myappname.vercel.app", if you have it on a separate server this should be "myapp.com", you must put the domain or the address of how to get to that app.
 CLIENT_HOST = http://0.0.0.0:3000
 
-# You must indicate the hostname to connect to your database, you can use MongoDB atlas, a local one on your server or use MongoDB database hosting, this must provide you with the same hostname that you must enter as a value in "DATABASE_HOST"
-DATABASE_HOST = mongodb+srv://Rodolfo:<password>@cutternet.pwrea.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+# You must indicate the hostname to connect to your database, you can use MongoDB atlas, a local one on your server or use MongoDB database hosting, this must provide you with the same hostname that you must enter as a value in "DATABASE_HOST", if it requires an username, you need replace it, but <password> not.
+DATABASE_HOST = 
 # Enter your database password, if this is required "DATABASE_PASSWORD" should store your password
-DATABASE_PASSWORD = Rodolfoxd665
+DATABASE_PASSWORD =
 
 # You must enter a secret key, it is recommended that you put characters, it is recommended that this key be secure, your passwords will be encrypted using this key, you can assign a value such as "29A06645A7A175816F107238EBE3D01364FBC85A6952BE13A1E6D350B47342AD" or other characters that are difficult to decipher.
 SECRET_KEY = my-secure-ultra-fucking-long-secret-key-here
@@ -78,10 +78,10 @@ JWT_COOKIE_EXPIRES_IN = 90
 PASSWORD_EXPIRES_IN_MINS = 10
 
 # Configuration that will serve to make the sending of emails work, you can look for tutorials on how to get this information from your email account in GMAIL, or if you have an email server already ready you can assign its configuration to these variables
-EMAIL_USERNAME = admin@codewithrodi.com
-EMAIL_PASSWORD = rodolfoxd665
-EMAIL_HOST = mail.codewithrodi.com
-EMAIL_PORT = 465
+EMAIL_USERNAME = 
+EMAIL_PASSWORD = 
+EMAIL_HOST = 
+EMAIL_PORT = 
 
 NODE_TLS_REJECT_UNAUTHORIZED = 0
 ```
