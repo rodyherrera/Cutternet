@@ -2,6 +2,7 @@
 ##### A simple, beautiful, safe and self-hosted URL shortener written in JavaScript.
 ###### Only tested on Linux
 Cutternet is a platform that will allow you to shorten URLs, generate detailed statistics about the visitors that the shortened URL receives, or use the embedded code and paste it in the source code of your website so that each time it receives a visit it is registered In Cutternet and you can view in detail all the visitors that your website receives, it is multi-language, easily expandable, free without limits of use or any fee, without paying monthly or annual subscriptions, animations, simple UI, beautiful with animations, secure platform With several firewalls in case of attacks, easy to deploy, mostly you will only have to edit .json and .env files, this software is built using the MERN Stack, completely ready to use, its terms and conditions written, all its pages complete, You only need to apply certain settings that will be explained below.
+Try the demo at [https://cutternet.codewithrodi.com/](https://cutternet.codewithrodi.com "Cutternet Demo"), with the credentials "codewithrodi" as the username and "idorherztoor" as the password.
 
 ### Features
 - Highly secure
