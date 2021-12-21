@@ -1,0 +1,156 @@
+#Selected-Link-Information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--Page-Background-Color);
+    z-index: 20;
+    padding: 0;
+    height: 90vh;
+    width: 100%;
+}
+
+#Selected-Link-Information > section {
+    display: flex;
+    width: 100%;
+}
+
+#Selected-Link-Information > section > :first-child {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    background-color: var(--Form-Page-Information-Background-Color);
+    border-right: var(--Generic-Border-Color) 1px solid;
+}
+
+#Selected-Link-Form-Title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Selected-Link-Form-Title i {
+    cursor: pointer;
+}
+
+#Selected-Link-Information > section > :last-child {
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#Selected-Link-Information-Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Selected-Link-Information-Header > :first-child {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#Selected-Link-Information-Header > :first-child:hover {
+    transform: scale(0.9);
+}
+
+#Selected-Link-Information-Header > :last-child {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#Selected-Link-Information-Header > :last-child > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#Selected-Link-Information-Header > :last-child > div > span {
+    font-size: 0.95rem;
+}
+
+#Selected-Link-Information-Header > :last-child > div > i {
+    font-size: 1.1rem;
+}
+
+#Selected-Link-Information-Header > :last-child > div:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#Selected-Link-Information-Header > :last-child > div > span {
+    margin-left: 0.5rem;
+}
+
+#Selected-Link-Information-Details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#Selected-Link-Information-Details > :last-child button:not(:last-child) {
+    margin-right: 0.8rem;
+}
+
+#Selected-Link-Information-Details > :first-child > img {
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
+@media (max-width: 768px) {
+    #Selected-Link-Information > section {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 1rem;
+    }
+
+    #Selected-Link-Information {
+        height: auto;
+    }
+
+    #Selected-Link-Information > section > :first-child,
+    #Selected-Link-Information > section > :last-child {
+        width: 100%;
+        overflow-y: auto;
+        box-shadow: var(--Form-Page-Mobile-Box-Shadow);
+        border-radius: 0.5rem;
+        background-color: transparent;
+    }
+
+    #Selected-Link-Information > section > :last-child {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    #Selected-Link-Information-Details > :first-child {
+        display: none;
+    }
+
+    #Selected-Link-Information-Header {
+        height: 100%;
+        margin-bottom: 3rem;
+        flex-direction: row-reverse;
+    }
+
+    #Selected-Link-Information-Details {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    #Selected-Link-Information-Details > div,
+    #Selected-Link-Information-Details > div > button,
+    #Selected-Link-Information > section > :last-child .Form-Submit button {
+        width: 100%;
+    }
+
+    #Selected-Link-Information-Header > :last-child > div {
+        justify-content: flex-start;
+    }
+}

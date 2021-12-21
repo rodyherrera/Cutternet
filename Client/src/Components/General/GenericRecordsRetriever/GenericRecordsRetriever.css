@@ -1,0 +1,101 @@
+#Generic-Records-Results-Information {
+    margin: 1rem 0;
+}
+
+.No-Records-Found {
+    height: 80vh !important;
+}
+
+#Generic-Records-Results-Information > :first-child {
+    margin-bottom: 0.5rem;
+}
+
+#Generic-Records-Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#Generic-Records-Header > article,
+#Generic-Records-Header > form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#Generic-Records-Loader {
+    width: 100%;
+    height: 80vh;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Generic-Records-Search {
+    margin-right: 1rem;
+}
+
+#Generic-Records-Header-Buttons > button:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+#Generic-Records-Loader > div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1000px) {
+    #Generic-Records-Header-Buttons {
+        display: flex;
+        width: 100%;
+        margin: 1rem 0;
+        justify-content: space-between;
+    }
+
+    #Generic-Records-Search {
+        width: 100%;
+    }
+
+    #Generic-Records-Header > form {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #Generic-Records-Header > article {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #Generic-Records-Main {
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    #Generic-Records-Loader {
+        height: 50vh;
+    }
+
+    #Generic-Records-Loader p {
+        font-size: 0.9rem;
+    }
+
+    #Generic-Records-Header {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #Generic-Records-Search {
+        width: 100%;
+        margin: 0;
+    }
+
+    #Generic-Records-Header > article {
+        display: none;
+    }
+}

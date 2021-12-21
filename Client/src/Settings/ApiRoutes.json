@@ -1,0 +1,31 @@
+{
+    "Server": "http://0.0.0.0:8000/",
+    "AnalyticForEmbedded": "Analytic.js",
+
+    "Auth": {
+        "SignIn": "api/v1/users/signin/",
+        "SignUp": "api/v1/users/signup/",
+        "ForgotPassword": "api/v1/users/forgot-password/",
+        "ResetPassword": "api/v1/users/reset-password/",
+
+        "MyProfile": "api/v1/users/me/",
+        "DeleteMe": "api/v1/users/delete-me/",
+        "UpdateMyPassword": "api/v1/users/update-my-password/",
+        "UpdateMyProfile": "api/v1/users/update-my-profile/",
+
+        "GetAllUsers": "api/v1/users/",
+        "DeleteUser": "api/v1/users/",
+        "UpdateUser": "api/v1/users/",
+        "GetUser": "api/v1/users/"
+    },
+
+    "Link": {
+        "CRUD": "api/v1/links/",
+        "GetAllLinks": "api/v1/links/all/",
+        "GetStatistics": "api/v1/links/statistics/"
+    },
+
+    "Language": {
+        "CRUD": "api/v1/languages/"
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "DefaultLanguage": "en",
+
+    "DataValidation": {
+        "Auth": {
+            "Username": {
+                "MaxLength": 16,
+                "MinLength": 4
+            },
+            "Password": {
+                "MaxLength": 32,
+                "MinLength": 8
+            }
+        },
+
+        "Link": {
+            "Name": {
+                "MaxLength": 32,
+                "MinLength": 4
+            }
+        },
+
+        "Language": {
+            "Key": {
+                "MaxLength": 64,
+                "MinLength": 4
+            },
+
+            "Value": {
+                "MaxLength": 3500
+            },
+
+            "Language": {
+                "MaxLength": 2,
+                "MinLength": 2
+            }
+        },
+
+        "LinkStatistic": {
+            "IPAddress": {
+                "MaxLength": 39
+            },
+
+            "BrowserLanguage": {
+                "MaxLength": 2,
+                "MinLength": 2
+            },
+
+            "OperatingSystem": {
+                "MaxLength": 16
+            },
+
+            "Browser": {
+                "MaxLength": 16
+            },
+
+            "Region": {
+                "MaxLength": 16
+            },
+
+            "City": {
+                "MaxLength": 16
+            },
+
+            "Country": {
+                "MaxLength": 2
+            },
+
+            "Timezone": {
+                "MaxLength": 32
+            },
+
+            "Latitude": {
+                "MaxLength": 10
+            },
+
+            "Longitude": {
+                "MaxLength": 11
+            }
+        }
+    }
+}

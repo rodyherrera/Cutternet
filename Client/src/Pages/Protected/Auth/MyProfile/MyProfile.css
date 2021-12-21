@@ -1,0 +1,31 @@
+#My-Profile-Information :first-child {
+    text-align: center;
+}
+
+#My-Profile-Information > :first-child > :last-child > div:not(:last-child),
+#My-Profile-Information > :first-child > div:not(:last-child) {
+    margin-bottom: 0.3rem;
+}
+
+#My-Profile-Settings {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#My-Profile-Links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#My-Profile-Links > :first-child {
+    background-color: #f1f1f1;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}

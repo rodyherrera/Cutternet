@@ -1,0 +1,28 @@
+.Menu-Item {
+    padding: 0.1rem 0;
+    will-change: transform;
+    transition: 0.5s;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.Menu-Item:hover {
+    background-color: var(--Menu-Item-Hover-Background-Color);
+}
+
+.Menu-Item:active {
+    background-color: var(--Menu-Item-Active-Background-Color);
+}
+
+.Menu-Item > :first-child {
+    padding: 0 !important;
+    margin: 0.7rem 0;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Menu-Item > :first-child > :first-child {
+    margin-right: 0.5rem;
+}

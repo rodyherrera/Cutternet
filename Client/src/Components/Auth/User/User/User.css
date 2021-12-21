@@ -1,0 +1,32 @@
+.Generic-User {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Generic-User > :first-child {
+    cursor: pointer;
+}
+
+.Generic-User:not(:last-child) {
+    border-bottom: var(--Generic-Border-Color) 1px solid;
+}
+
+.Generic-User:hover {
+    background-color: var(--Icon-Link-Hover-Background);
+}
+
+.Generic-User > :first-child > div:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+.Generic-User-Avatar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Generic-User-Avatar > span {
+    margin-left: 0.5rem;
+}

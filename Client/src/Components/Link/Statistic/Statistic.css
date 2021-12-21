@@ -1,0 +1,39 @@
+.Generic-Statistic {
+    padding: 1rem;
+    font-size: 0.95rem;
+}
+
+.Generic-Statistic:hover {
+    background-color: var(--Icon-Link-Hover-Background);
+}
+
+.Generic-Statistic:not(:last-child) {
+    border-bottom: var(--Generic-Border-Color) 1px solid;
+}
+
+.Generic-Statistic > :last-child {
+    margin-top: 0.5rem;
+}
+
+.Generic-Statistic > :first-child > :first-child > h3 {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+}
+
+.Generic-Statistic > :first-child > :last-child {
+    text-align: end;
+}
+
+.Generic-Statistic > :first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Generic-Statistic-Timezone {
+    margin-top: 0.3rem;
+}
+
+.Generic-Statistic > :last-child > p:not(:last-child) {
+    margin-bottom: 0.2rem;
+}

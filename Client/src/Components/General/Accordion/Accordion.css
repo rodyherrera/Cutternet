@@ -1,0 +1,7 @@
+.Generic-Accordion {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100%;
+    background-color: var(--Accordion-Background-Color) !important;
+    color: var(--Accordion-Font-Color) !important;
+}

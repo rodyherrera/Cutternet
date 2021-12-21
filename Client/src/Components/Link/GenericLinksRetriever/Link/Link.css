@@ -1,0 +1,56 @@
+.Generic-Links-Link {
+    padding: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Generic-Links-Link:hover {
+    background-color: var(--Icon-Link-Hover-Background);
+}
+
+.Generic-Links-Link > :last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: auto;
+}
+
+.Generic-Links-Link > :last-child > :first-child,
+.Generic-Links-Link > :first-child > :first-child {
+    cursor: pointer;
+}
+
+.Generic-Links-Link i {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.Generic-Links-Link > :first-child div {
+    margin-bottom: 0.5rem;
+}
+
+.Generic-Links-Link > :first-child div h3 {
+    margin-top: 0.2rem;
+    font-size: 1.12rem;
+    letter-spacing: 0.1px;
+}
+
+.Generic-Links-Link a {
+    color: var(--Generic-Link-Link-Color);
+}
+
+.Generic-Links-Link a:hover {
+    opacity: 0.8;
+}
+
+.Generic-Links-Link:not(:last-child) {
+    border-bottom: var(--Form-Page-Border-Colo) 1px solid;
+}
+
+@media (max-width: 768px) {
+    .Generic-Links-Link {
+        border-radius: 0.5rem;
+    }
+}

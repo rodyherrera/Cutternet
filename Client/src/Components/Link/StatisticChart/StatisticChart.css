@@ -1,0 +1,16 @@
+#Statistics-Chart-Month-Visits {
+    margin-bottom: 2rem;
+}
+
+#Statistic-Chart-Charts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+#Statistic-Chart-Charts > div {
+    margin-bottom: 2rem;
+    max-width: 20rem;
+    max-height: 20rem;
+}

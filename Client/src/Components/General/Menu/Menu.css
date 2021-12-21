@@ -1,0 +1,67 @@
+#Navegation-Menu {
+    position: fixed;
+    right: 1rem;
+    width: 18rem;
+    display: flex;
+    height: calc(100% - 5.5rem);
+    flex-wrap: wrap;
+    z-index: 20;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Navegation-Menu-Identifier {
+    margin-bottom: 0.5rem;
+}
+
+#Navegation-Menu-Links {
+    border-radius: 0.5rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 35rem;
+    background-color: var(--Menu-Background-Color);
+}
+
+#Navegation-Menu-Links > article:not(:first-child) {
+    margin-top: 1.5rem;
+}
+
+#Navegation-Menu-Header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Navegation-Menu-Avatar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Navegation-Menu-Avatar > h1 {
+    margin-left: 0.7rem;
+}
+
+#Navegation-Menu-Header > i {
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px), (max-height: 666px) {
+    #Navegation-Menu {
+        top: 0;
+        right: 0;
+        width: 16rem;
+        height: 100%;
+    }
+
+    #Navegation-Menu-Links {
+        height: 100%;
+        border-radius: 0;
+        max-height: 100%;
+    }
+}

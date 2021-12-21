@@ -1,0 +1,59 @@
+{
+    "About": {
+        "Github": "https://github.com/CodeWithRodi/Cutternet/"
+    },
+
+    "FlashMessage": {
+        "Duration": 5000,
+        "PersistOnHover": true
+    },
+
+    "APIPagination": {
+        "Limit": {
+            "Max": 75,
+            "Default": 10
+        },
+        "Page": {
+            "Default": 1
+        }
+    },
+
+    "DataValidation": {
+        "Auth": {
+            "Username": {
+                "MaxLength": 16,
+                "MinLength": 4
+            },
+            "Password": {
+                "MaxLength": 32,
+                "MinLength": 8
+            },
+            "Role": {
+                "Enum": ["admin", "user"]
+            }
+        },
+
+        "Link": {
+            "Name": {
+                "MaxLength": 32,
+                "MinLength": 4
+            }
+        },
+
+        "Language": {
+            "Key": {
+                "MaxLength": 64,
+                "MinLength": 4
+            },
+
+            "Value": {
+                "MaxLength": 3500
+            },
+
+            "Language": {
+                "MaxLength": 2,
+                "MinLength": 2
+            }
+        }
+    }
+}

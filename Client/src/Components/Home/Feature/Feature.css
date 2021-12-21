@@ -1,0 +1,30 @@
+.Generic-Feature {
+    width: 30%;
+    padding: 1rem;
+}
+
+.Generic-Feature img {
+    max-width: 10rem;
+    max-height: 10rem;
+}
+
+.Generic-Feature figcaption .Display-On-Desktop {
+    margin-top: 0.7rem;
+    width: 100%;
+}
+
+.Generic-Feature figcaption > .Display-On-Desktop > p {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .Generic-Feature {
+        width: auto;
+        padding: 0;
+    }
+
+    .Generic-Feature:not(:last-child) {
+        margin-bottom: 0.5rem;
+    }
+}

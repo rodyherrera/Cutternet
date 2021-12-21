@@ -1,0 +1,27 @@
+{
+    "Suffix": "/api/v1",
+
+    "Auth": {
+        "Suffix": "/users",
+
+        "SignIn": "/signin/",
+        "SignUp": "/signup/",
+        "ForgotPassword": "/forgot-password/",
+        "ResetPassword": "/reset-password/:Token",
+
+        "MyProfile": "/me/",
+        "DeleteMe": "/delete-me/",
+        "UpdateMyPassword": "/update-my-password/",
+        "UpdateMyProfile": "/update-my-profile/"
+    },
+
+    "Link": {
+        "Suffix": "/links/",
+
+        "GetAllLinks": "/all/"
+    },
+
+    "Language": {
+        "Suffix": "/languages/"
+    }
+}

@@ -1,0 +1,121 @@
+#Home-Main {
+    margin: 0 auto;
+}
+
+#Home-Presentation {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60%;
+}
+
+#Home-Presentation > :first-child h1 {
+    width: 90%;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#Home-Presentation > :first-child p {
+    width: 80%;
+    opacity: 0.9;
+}
+
+#Home-Presentation > :first-child div {
+    margin-top: 2rem;
+}
+
+#Home-Presentation > :first-child {
+    margin-top: 4.5rem;
+    width: 50%;
+}
+
+#Home-Presentation > :last-child img {
+    width: 19rem;
+    height: 19rem;
+}
+
+#Home-Features {
+    display: flex;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#Home-Features > :first-child {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#Home-Features > :first-child > p {
+    margin-top: 0.5rem;
+}
+
+#Home-Features > :last-child {
+    display: flex;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#Home-Frequently-Questions {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+#Home-Frequently-Questions > :first-child {
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+@media (max-width: 768px) {
+    #Home-Features > :last-child {
+        flex-direction: column;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    #Home-Presentation > :first-child {
+        margin-top: 1rem;
+    }
+
+    #Home-Features > :first-child {
+        max-width: 100%;
+    }
+
+    #Home-Features {
+        margin-top: 3rem;
+    }
+
+    #Home-Presentation {
+        margin-top: 0;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    #Home-Presentation > :last-child {
+        text-align: center;
+    }
+
+    #Home-Frequently-Questions {
+        max-width: 100%;
+    }
+
+    #Home-Presentation > :first-child,
+    #Home-Presentation > :first-child h1,
+    #Home-Presentation > :first-child p {
+        width: 100%;
+    }
+
+    #Home-Presentation > :first-child h1 {
+        font-size: 1.5rem;
+    }
+
+    #Home-Presentation > :first-child > div button {
+        width: 100%;
+    }
+}

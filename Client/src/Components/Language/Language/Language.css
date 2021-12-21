@@ -1,0 +1,27 @@
+.Generic-Language {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Generic-Language:not(:last-child) {
+    border-bottom: var(--Generic-Border-Color) 1px solid;
+}
+
+.Generic-Language:hover {
+    background-color: var(--Icon-Link-Hover-Background);
+}
+
+.Generic-Language > :first-child {
+    cursor: pointer;
+}
+
+.Generic-Language-Key {
+    margin-top: 0.3rem;
+    margin-bottom: 0.7rem;
+}
+
+.Generic-Language-Value {
+    font-size: 0.9rem;
+}

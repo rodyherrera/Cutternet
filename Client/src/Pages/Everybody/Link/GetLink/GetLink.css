@@ -1,0 +1,19 @@
+#Get-Link-Main {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+#Get-Link-Main article > p {
+    margin-top: 2rem;
+}

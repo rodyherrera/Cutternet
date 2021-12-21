@@ -1,0 +1,25 @@
+#Get-Statistics {
+    flex-direction: column-reverse;
+}
+
+#Get-Statistics-Charts {
+    display: unset;
+}
+
+#Get-Statistics-Charts-Mobile {
+    display: none;
+}
+
+#Get-Statistics-Charts-Mobile-Accordeon {
+    box-shadow: var(--Form-Page-Mobile-Box-Shadow) !important;
+}
+
+@media (max-width: 768px) {
+    #Get-Statistics-Charts {
+        display: none;
+    }
+
+    #Get-Statistics-Charts-Mobile {
+        display: block;
+    }
+}

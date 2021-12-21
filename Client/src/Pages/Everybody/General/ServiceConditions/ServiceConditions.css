@@ -1,0 +1,43 @@
+#Service-Conditions-Main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#Service-Conditions-Main > section {
+    width: 80%;
+}
+
+#Service-Conditions-Main > section > :first-child > :first-child {
+    margin-bottom: 1rem;
+}
+
+#Service-Conditions-Main > section > :first-child {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.Service-Term {
+    line-height: 1.3rem;
+}
+
+.Service-Term:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.Service-Term > h3 {
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    #Service-Conditions-Main > section {
+        width: 100%;
+        box-shadow: rgb(197 197 197 / 24%) 0px 0px 4px 2px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+}

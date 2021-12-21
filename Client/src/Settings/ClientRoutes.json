@@ -1,0 +1,37 @@
+{
+    "General": {
+        "ServiceConditions": "/terms-and-conditions/",
+        "ServerDown": "/server-down/"
+    },
+
+    "Auth": {
+        "SignIn": "/auth/signin/",
+        "SignUp": "/auth/signup/",
+
+        "ForgotPassword": "/auth/forgot-password/",
+        "ResetPassword": "/auth/reset-password/:ResetPasswordToken",
+
+        "MyProfile": "/auth/my-profile/",
+        "UpdateMyPassword": "/auth/update-my-password/",
+        "UpdateMyProfile": "/auth/update-my-profile/",
+
+        "ManageUsers": "/auth/admin/dashboard/"
+    },
+
+    "Link": {
+        "GetLink": "/:Username/:LinkName",
+
+        "CreateLink": "/links/create/",
+        "DeleteLink": "/links/delete/",
+        "UpdateLink": "/links/update/",
+        "GetMyLinks": "/links/dashboard/",
+        "GetStatistics": "/links/statistics/:Username/:LinkName",
+
+        "ManageLinks": "/links/admin/dashboard/"
+    },
+
+    "Language": {
+        "CreateLanguage": "/languages/admin/create/",
+        "ManageLanguages": "/languages/admin/dashboard/"
+    }
+}
