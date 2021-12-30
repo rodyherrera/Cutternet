@@ -37,7 +37,7 @@ const GetStatistics = () => {
     const [GetIsLoading, SetIsLoading] = useState(false);
     const [GetLimit, SetLimit] = useState(APIPagination.Limit.Default);
     const [GetPage, SetPage] = useState(APIPagination.Page.Default);
-    const [GetDistributedStatistics, SetDistributedStatistics] = useState({});
+    const [GetDistributedStatistics, SetDistributedStatistics] = useState({ MonthVisits: [], OperatingSystems: [], BrowserLanguages: [], Browsers: [], Countries: [] });
     const [GetIsComponentMounted, SetIsComponentMounted] = useState(true);
     const Navigate = useNavigate();
 
