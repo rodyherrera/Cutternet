@@ -38,9 +38,6 @@ Chart.register(
 );
 
 const StatisticChart = ({ StatisticData }) => {
-    if(!StatisticData.length)
-        return <></>;
-    
     const GetSortedMonths = Object.keys(StatisticData.MonthVisits);
 
     const GetOperatingSystemStatistics = {
