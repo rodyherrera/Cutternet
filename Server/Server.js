@@ -20,6 +20,7 @@ const XSS = require('xss-clean');
 const Cors = require('cors');
 const Settings = require('./Settings/');
 const HTTPs = require('https');
+const HTTP = require('http');
 const FileSystem = require('fs');
 
 process.on('uncaughtException', (ServerError) => {
@@ -71,17 +72,18 @@ Application.all('*', (Request, Response, Next) =>
 
 Application.use(GlobalErrorHandler);
 
-const Server = HTTPs.createServer(
-    {
-        key: (process.env.SSL_KEY.length) ? (FileSystem.readFileSync(process.env.SSL_KEY)) : (''),
-        cert: (process.env.SSL_CERT.length) ? (FileSystem.readFileSync(process.env.SSL_CERT)) : ('')
-    },
-    Application
-).listen(Port, Hostname, () => 
-    console.log(
-        `(Cutternet) > The server was started successfully in the network address (${Hostname}:${Port})`
-    )
-);
+var Server = HTTP.createServer;
+var Configuration = {};
+
+if(process.env.SSL_CERT.length && process.env.SSL_KEY.length){
+    Server = HTTPs.createServer;
+    Configuration.key = FileSystem.readFileSync(process.env.SSL_KEY);
+    Configuration.cert = FileSystem.readFileSync(process.env.SSL_CERT);
+}
+
+Server(Configuration, Application).listen(Port, Hostname, () => {
+    console.log(`(CodexDrake) > The server was started successfully in the network address (${Hostname}:${Port})`);
+});
 
 process.on('unhandledRejection', (ServerError) => {
     console.log(ServerError.name, ServerError.message);
