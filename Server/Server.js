@@ -55,7 +55,7 @@ Mongoose.connect(Database, { useNewUrlParser: true })
         )
     );
 
-Application.use(Cors({ origin: '*' }));
+Application.use(Cors({ origin: process.env.CORS_ORIGIN }));
 Application.use(Helmet());
 Application.use(Express.json({ limit: process.env.BODY_MAX_SIZE }));
 Application.use(MongoSanitize());
