@@ -98,7 +98,7 @@ const LinkStatisticSchema = new Mongoose.Schema({
     },
     RegisteredAt: {
         type: Date,
-        default: Date.now()
+        default: Date.now
     }
 });
 
