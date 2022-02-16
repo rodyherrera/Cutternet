@@ -59,6 +59,12 @@ footer a:hover {
     opacity: 1;
 }
 
+@media (max-width: 1070px), (max-height: 600px){
+    footer {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
     .Header-Navegation-Auth-Button {
         display: none;
@@ -73,10 +79,6 @@ footer a:hover {
 
     #Header-Navigation-Auth-Dropdown {
         display: block;
-    }
-
-    footer {
-        display: none;
     }
 }
 
