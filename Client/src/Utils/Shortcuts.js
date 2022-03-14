@@ -157,10 +157,7 @@ export const GenericRequestToBackend = ({
     // ! ReturnData => ['Name', 'Price', 'Author']
     if (Filter.Fields !== undefined) AppendParameter('Fields=' + Filter.Fields.join(','));
     // ! Pagination
-    if (Filter.Paginate.Page !== undefined) {
-        const Limit = Filter.Paginate.Limit || 10;
-        AppendParameter('Page=' + Filter.Paginate.Page + '&Limit=' + Limit);
-    }
+    AppendParameter('Page=' + (Filter.Paginate.Page || 1) + '&Limit=' + Filter.Paginate.Limit);
     // ! Search Text
     if (Filter.Search !== undefined) AppendParameter('Search=' + Filter.Search);
     let Arguments = [FormattedRouteAPI(Path + FilterBuffer)];
