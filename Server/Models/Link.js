@@ -66,13 +66,7 @@ LinkSchema.virtual('LinkStatistics', {
 
 LinkSchema.pre(['findOneAndDelete', 'deleteMany'], async function (Next) {
     const Query = this.getQuery();
-    let Filter = {};
-    // ! If it is called when user delete their account
-    if (Query.User) Filter = { User: Query.User };
-    // ! If it is called directly from model (Link.deleteMany || ...)
-    else Filter = { Link: Query._id };
-
-    await LinkStatistic.deleteMany(Filter);
+    await LinkStatistic.deleteMany({ Link: Query._id });
     Next();
 });
 
