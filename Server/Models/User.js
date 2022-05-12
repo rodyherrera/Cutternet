@@ -84,7 +84,7 @@ UserSchema.pre('save', async function (Next) {
 
 UserSchema.pre('save', function (Next) {
     if (!this.isModified('Password') || this.isNew) return Next();
-    this.PasswordChangeAt = Date.now() - 1000;
+    this.PasswordChangedAt = Date.now() - 1000;
     Next();
 });
 
