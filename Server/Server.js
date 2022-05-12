@@ -82,7 +82,7 @@ if(process.env.SSL_CERT.length && process.env.SSL_KEY.length){
 }
 
 Server(Configuration, Application).listen(Port, Hostname, () => {
-    console.log(`(CodexDrake) > The server was started successfully in the network address (${Hostname}:${Port})`);
+    console.log(`(Cutternet) > The server was started successfully in the network address (${Hostname}:${Port})`);
 });
 
 process.on('unhandledRejection', (ServerError) => {
