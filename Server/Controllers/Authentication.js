@@ -86,7 +86,7 @@ exports.ForgotPassword = CatchAsync(async (Request, Response, Next) => {
 });
 
 exports.ResetPassword = CatchAsync(async (Request, Response, Next) => {
-    const HashedToken = Crypto.createHash('sha256').update(Request.params.Token).digest('hex');
+    const HashedToken = Crypto.createHash('sha256').update(Request.params.Token || '').digest('hex');
     const RequestedUser = await User.findOne({
         PasswordResetToken: HashedToken,
         PasswordResetExpires: { $gt: Date.now() }
