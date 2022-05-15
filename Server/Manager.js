@@ -63,7 +63,7 @@ const CreateSuperUser = async () => {
     const Email = Prompt(FormatInput(`Email: (Default - ${Default.Email})`)) || Default.Email;
     const Password =
         Prompt(FormatInput(`Password: (Default - ${Default.Password})`)) || Default.Password;
-    const PasswordConfirm = Prompt(FormatInput(`Confirm the password`)) || Default.Password;
+    const PasswordConfirm = Prompt(FormatInput(`Confirm the password`));
     if (Password !== PasswordConfirm) {
         FormatStandardOutput('Password are no the same');
         process.exit();
