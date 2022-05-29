@@ -52,7 +52,8 @@ const GenericLinksRetriever = ({ HeaderTitle, SetLinks, GetLinks, GetIsLoading, 
     );
     const [GetIsComponentMounted, SetIsComponentMounted] = useState(true);
     const Location = useLocation();
-    let OnGetLinks = OnGetMyLinks;
+    
+    let OnGetLinks = (Location.pathname === LinkRoutes.ManageLinks) ? (OnGetAllLinks) : (OnGetMyLinks);
 
     useEffect(() => {
         return () => {
@@ -64,12 +65,6 @@ const GenericLinksRetriever = ({ HeaderTitle, SetLinks, GetLinks, GetIsLoading, 
             SetIsComponentMounted(false);
         };
     }, []);
-
-    IsEqualLocationPathWithNonFormattedRoutePath({
-        LocationPath: Location.pathname,
-        NonFormattedRoutePath: LinkRoutes.ManageLinks,
-        IsEqualCallback: () => (OnGetLinks = OnGetAllLinks)
-    });
 
     const HandleOnDeleteLink = (LinkData, LinkName) =>
         OnDeleteLink({
