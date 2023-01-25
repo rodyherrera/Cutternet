@@ -1,5 +1,5 @@
 {
-    "Server": "https://codewithrodi.com:1808/",
+    "Server": "https://api.cutternet.codewithrodi.com/",
     "AnalyticForEmbedded": "Analytic.js",
 
     "Auth": {
