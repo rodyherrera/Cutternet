@@ -5,7 +5,7 @@
  *
  * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
  *
- * For related information - https://github.com/CodeWithRodi/Cutternet/
+ * For related information - https://github.com/rodyherrera/Cutternet/
  *
  * Cutternet Client Source Code
  *
@@ -189,11 +189,11 @@ export const ParseToURLParameters = (Subject, AsArray = undefined) => {
 // ! LocationPath => Browser path
 // ! NonFormattedRoutePath => App Source Code(src/Settings/ClientRoutes.json)
 // ! Example:
-// ! LocationPath => /Links/CodeWithRodi/Website/
+// ! LocationPath => /Links/rodyherrera/Website/
 // ! NonFormattedRoutePath => /Links/:Username/:LinkName/
 // ! IsEqualLocationPathWithNonFormattedRoutePath => True
 // ! ||
-// ! LocationPath => /CodeWithRodi/Videos/
+// ! LocationPath => /rodyherrera/Videos/
 // ! NonFormattedRoutePath => /:Username/Videos/Comments/
 // ! IsEqualLocationPathWithNonFormattedRoutePath => False
 export const IsEqualLocationPathWithNonFormattedRoutePath = ({
@@ -300,19 +300,19 @@ export const IsEqualLocationPathWithNonFormattedRoutePath = ({
 };
 
 // ! Examples of usage
-// ! FormatRoutePathWithContext('/Posts/:Username/:BlogSlug/', ['CodeWithRodi', 'Some-Shit', true])
-// ! Output => [http(s)]//[hostname]/Posts/CodeWithRodi/Some-Shit/
-// ! FormatRoutePathWithContext('/Posts/:Username/:BlogSlug/', ['CodeWithRodi', 'Some-Shit'])
-// ! Output => /Posts/CodeWithRodi/Some-Shit/
+// ! FormatRoutePathWithContext('/Posts/:Username/:BlogSlug/', ['rodyherrera', 'Some-Shit', true])
+// ! Output => [http(s)]//[hostname]/Posts/rodyherrera/Some-Shit/
+// ! FormatRoutePathWithContext('/Posts/:Username/:BlogSlug/', ['rodyherrera', 'Some-Shit'])
+// ! Output => /Posts/rodyherrera/Some-Shit/
 // ! FormatRoutePathWithContext({
 // !    RoutePath: '/Videos/:Username/:VideoSlug/',
 // !    Context: {
-// !        Username: 'CodeWithRodi',
+// !        Username: 'rodyherrera',
 // !        VideoSlug: 'Ugly-Video'
 // !    },
 // !    WithLocalSchema: true
 // ! })
-// ! Output => [http(s)]//[hostname]/Videos/CodeWithRodi/Ugly-Video/
+// ! Output => [http(s)]//[hostname]/Videos/rodyherrera/Ugly-Video/
 export const FormatRoutePathWithContext = ({ RoutePath, Context, WithLocalSchema = false }) => {
     if (RoutePath.startsWith('/')) RoutePath.slice(1);
     if (RoutePath.endsWith('/')) RoutePath.slice(0, RoutePath.length - 1);

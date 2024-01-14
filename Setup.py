@@ -5,7 +5,7 @@
 # *
 # * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
 # *
-# * For related information - https://github.com/CodeWithRodi/Cutternet/
+# * For related information - https://github.com/rodyherrera/Cutternet/
 # *
 # * This "Setup.py" file is not optimized or designed to function optimally, it 
 # * does not have refactored code nor is it written in the best way with good 
@@ -172,9 +172,9 @@ try:
             ArgumentsExecutables[Argument.lower()]()
 
     print(f'''\
- >>> [Website] https://codewithrodi.com/
- >>> [Source Code] https://github.com/CodeWithRodi/Cutternet/
- >>> [Email] contact@codewithrodi.com
+ >>> [Website] https://rodyherrera.com/
+ >>> [Source Code] https://github.com/rodyherrera/Cutternet/
+ >>> [Email] contact@rodyherrera.com
 
  :-: It has been detected that you are using <Linux>, you are 
  :-: executing the Cutternet Setup, you have a detailed explanation 
@@ -226,9 +226,9 @@ try:
  :-: connection with the database listed in the file ".env" of the 
  :-: Server source code, as well as having established a secret key, success!
 
- >>> [Website] https://codewithrodi.com/
- >>> [Source Code] https://github.com/CodeWithRodi/Cutternet/
- >>> [Email] contact@codewithrodi.com
+ >>> [Website] https://rodyherrera.com/
+ >>> [Source Code] https://github.com/rodyherrera/Cutternet/
+ >>> [Email] contact@rodyherrera.com
     ''')
 
 except KeyboardInterrupt:

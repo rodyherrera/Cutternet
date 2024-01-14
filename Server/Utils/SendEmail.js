@@ -5,7 +5,7 @@
  *
  * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
  *
- * For related information - https://github.com/CodeWithRodi/Cutternet/
+ * For related information - https://github.com/rodyherrera/Cutternet/
  *
  * Cutternet Backend Source Code
  *
@@ -27,7 +27,7 @@ const SendEmail = CatchAsync(async (Options) => {
 
     // * Define the email options
     const MailOptions = {
-        from: 'Rodolfo Herrera Hernandez <admin@codewithrodi.com>',
+        from: 'Rodolfo Herrera Hernandez <admin@rodyherrera.com>',
         to: Options.Email,
         subject: Options.Subject,
         text: Options.Message

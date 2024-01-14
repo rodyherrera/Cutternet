@@ -5,7 +5,7 @@
  *
  * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
  *
- * For related information - https://github.com/CodeWithRodi/Cutternet/
+ * For related information - https://github.com/rodyherrera/Cutternet/
  *
  * Cutternet Backend Source Code
  *
@@ -52,8 +52,8 @@ const DropLanguageCollection = () =>
 
 const CreateSuperUser = async () => {
     const Default = {
-        Username: 'codewithrodi',
-        Email: 'admin@codewithrodi.com',
+        Username: 'rodyherrera',
+        Email: 'admin@rodyherrera.com',
         Password: 'idorherztoor',
         PasswordConfirm: 'idorherztoor'
     };

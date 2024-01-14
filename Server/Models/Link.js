@@ -5,7 +5,7 @@
  *
  * =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
  *
- * For related information - https://github.com/CodeWithRodi/Cutternet/
+ * For related information - https://github.com/rodyherrera/Cutternet/
  *
  * Cutternet Backend Source Code
  *
